@@ -1,0 +1,263 @@
+         html {
+             font-size: 16px;
+             margin-top: 100px;
+         }
+         
+         body {
+             font-family: 'Montserrat', sans-serif;
+             background: white;
+             width: 1700px;
+             height: 1700px;
+         }
+         
+         header {
+             position: fixed;
+             top: 0;
+             left: 0;
+             display: flex;
+             width: 100%;
+             height: 90px;
+             justify-content: space-between;
+             align-items: center;
+             background-color: white;
+             border-bottom: solid black 0.5px;
+             z-index: 5;
+         }
+         
+         #logo-short {
+             padding-left: 60px;
+             max-height: 240px;
+             max-width: 140px;
+         }
+         
+         nav {
+             padding-right: 60px;
+         }
+         
+         a {
+             text-decoration: none;
+             padding: 10px;
+             color: black;
+             font-size: 18px;
+         }
+         
+         a:hover {
+             color: rgb(230, 173, 88);
+         }
+         
+         h2 {
+             font-family: 'Bebas Neue', cursive;
+             font-size: 3rem;
+         }
+         
+         h3 {
+             font-family: 'Bebas Neue', cursive;
+             font-size: 1.75rem;
+         }
+         
+         h4 {
+             font-family: 'Montserrat', sans-serif;
+             font-weight: normal;
+             font-size: 1.75rem;
+         }
+         /* BANNER */
+         
+         #banner {
+             display: grid;
+             grid-template: repeat(10, 50px)/repeat(16, 100px);
+             width: 1600px;
+             height: 400px;
+             margin: auto;
+         }
+         
+         #one {
+             grid-area: 1 / 1 / 12 / 9;
+             margin: auto;
+         }
+         
+         #two {
+             font-family: 'Bebas Neue', cursive;
+             grid-area: 3 / 9 / 5 / 17;
+             color: white;
+             font-size: 3rem;
+             margin: auto;
+         }
+         
+         #three {
+             color: rgb(32, 27, 27);
+             font-family: 'Bebas Neue', cursive;
+             grid-area: 5 / 9 / 6 / 16;
+             font-size: 1.75rem;
+             margin: auto;
+         }
+         
+         #four {
+             grid-area: 1 / 9 / 12/ 17;
+             z-index: -1;
+         }
+         
+         #five {
+             grid-area: 9 / 8 / 10 / 12;
+         }
+         
+         button {
+             border: none;
+             font-family: 'Montserrat', sans-serif;
+             font-size: 1.125rem;
+             color: black;
+             background-color: white;
+             border-radius: 45px;
+             margin: auto;
+             text-align: center;
+             padding: 20px;
+             transition-duration: 1s;
+         }
+         
+         button:hover {
+             background-color: rgb(230, 173, 88);
+             color: white;
+             border: none;
+         }
+         /* CATALOG */
+         
+         #catalog .container {
+             display: flex;
+             margin-top: 150px;
+             left: 0;
+             justify-content: space-around;
+             color: white;
+             border-top: rgb(32, 27, 27) solid 5px;
+         }
+         
+         #catalog .box {
+             display: flex;
+             justify-content: first baseline;
+             align-items: center;
+             flex-direction: column;
+             background-color: rgb(32, 27, 27);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             text-align: left;
+             padding: 20px;
+             margin-bottom: 0;
+             width: 200px;
+             height: 400px;
+         }
+         
+         #catalog h4 {
+             margin-top: 0;
+             text-decoration: underline;
+         }
+         
+         .info {
+             font-family: 'Montserrat', sans-serif;
+             font-size: 1rem;
+             margin-top: 0;
+         }
+         
+         #catalog button {
+             font-size: 1rem;
+         }
+         /* LOCATIONS */
+         
+         #locations .container {
+             display: flex;
+             justify-content: space-around;
+             align-items: flex-start;
+             margin: auto;
+         }
+         
+         #locations h4 {
+             color: black;
+             text-align: center;
+         }
+         
+         .location {
+             max-height: 300px;
+             max-width: 600px;
+             z-index: -1;
+             object-fit: fill;
+             margin: auto;
+         }
+         
+         figure {
+             position: relative;
+             float: left;
+         }
+         
+         figure a:hover {
+             opacity: 0.5;
+         }
+         
+         figcaption {
+             display: block;
+             float: left;
+             position: absolute;
+             top: 200px;
+             left: 20px;
+             padding: 20px;
+             border-radius: 30px;
+             z-index: 1;
+             color: black;
+             background-color: white;
+             font-family: 'Montserrat', sans-serif;
+             font-weight: normal;
+             font-size: 1.25rem;
+         }
+         /* PEOPLE */
+         
+         .back {
+             position: relative;
+             width: 100vw;
+             height: 100vh;
+         }
+
+         .back img {
+            width: 100%;
+            height: 140%;
+         }
+         
+         #people h2 {
+             display: block;
+             position: absolute;
+             top: 220px;
+             left: 200px;
+             width: 570px;
+             padding: 10px;
+             z-index: 1;
+             font-size: 10rem;
+             color: rgb(230, 173, 88);
+             background-color: white;
+         }
+         
+         #people p {
+             display: block;
+             position: absolute;
+             top: 560px;
+             left: 200px;
+             width: 570px;
+             height: 330px;
+             padding: 10px;
+             z-index: 1;
+             font-family: 'Bebas Neue', cursive;
+             font-size: 2.625rem;
+             color: black;
+             background-color: white;
+         }
+         /* FOOTER */
+         
+         footer {
+             position: absolute;
+             top: 2700px;
+             left: 0;
+             width: 100%;
+             background-color: rgb(32, 27, 27);
+             z-index: 5;
+             text-align: center;
+             color: rgb(143, 143, 143);
+         }
+         
+         #copyright {
+             text-align: right;
+             padding: 20px;
+         }
